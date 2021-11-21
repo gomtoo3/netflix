@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 /* reset */
+li {
+    list-style-type: none;
+    
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -20,59 +24,60 @@ button, input {
     clear: both;
 }
 
-
-
-
 /* section kids style */
 
 section.kids {
     background: #000;
-    width: 1220px;
-    height: 530px;
+    height: 500px;
     color: #fff;
-    border-top: 3px solid #fff;
-    padding: 50px 0;    
-    
-    content: '' ;
-    display: block; 
-    clear: both;  
+    border-top: 8px solid #333;
+    padding: 20px;        
 }
-
 section.kids .kids-box {
     /* background: greenyellow; */
-    width: 60%;
+    width: 90%; 
+    height: 350px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding: 5% 10%;
+
     position: relative;
 }
-section.kids .kids-box .img-box-1 {
+section.kids .kids-box .img-box {
     float: left;
+    /* border: 1px solid red; */
     width: 40%;
-    height: 300px;
-    /* background: url('../img/netlf_kids.png') no-repeat; */
+    height: 100%;
+    /* padding: 5% 0; */
     background: url('https://occ-0-4342-993.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABTyynLTvOBU46RmBnCIPyjAryrXCZKImpoXdp7Mz54jVGKnBQ1X84bzR-3vtD-RA4uu2b1FjrDgfxE6KElG14WAXW19X.png?r=acf') no-repeat;
     background-size: contain;
-    margin-top: 10%;
+    /* border: 1px solid red; */
 }
 section.kids .kids-box .title {
-    width: 60%;
-    text-align: justify;
-
+    width: 40%;
     float: right;
-    /* background: tomato; */
+    /* padding: 10px 10px; */
+    /* text-align: justify; */
     position: absolute;
-    left: 70%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
+    top: 25%;
+    /* background: tomato; */
 }
-
 section.kids .kids-box .title h2 {
-    font-size: 45px;    
-    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    /* text-align: justify; */
+    letter-spacing: 3;
+    line-height: 1.2em; 
+    padding-bottom: 30px;
     /* background: red; */
 }
 section.kids .kids-box .title p {
-    font-size: 20px;
-    color: #555;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 3;
+    /* text-align: start;  */
+    color: #fff;
     /* background: blue; */
 }
 /* end-section kids style */
@@ -83,56 +88,58 @@ section.kids .kids-box .title p {
 
 section.faq {
     background: #000;
-    width: 790px;
-    height: 887px;
+    height: 969px;
     color: #fff;
-    border-top: 3px solid #fff;
-    padding: 50px 0;
-    content: '' ;
-    display: block; 
-    clear: both;  
+    border-top: 8px solid #333;
+    padding: 10px 0;
 }
-
 section.faq .faq-box {
-    /* background: orange; */
+    /* background: red; */
     width: 50%;
+    height: 821px;
     margin: 0 auto;
+    margin-top: 30px;
     position: relative;
     }
-
 section.faq .faq-box .title {
-    width: 80%;
+    /* width: 80%; */
     /* background: tomato; */
     margin: 0 auto;
 }
-
 section.faq .faq-box .title h2 {
     font-size: 45px;    
     font-weight: 700;
     text-align: center;
     padding-bottom: 20px;
+    background: yellow;
 }
 section.faq .faq-box ul.list {
-    width: 90%;
-    border: 1px solid #000;
-    /* background: red; */
-    padding: 20px;
+    /* width: 90%; */
+    height: 500px;
+    background: red;
+    /* padding: 10px; */
+    padding-bottom: 10px;
     box-sizing: border-box;
     font-size: 20px;
     color: #555;
     margin: 0 auto;
 }
-
 section.faq .faq-box ul.list li {
-    width: 668px;
+    width: 814px;
+    height: 50px;
     margin-bottom: 5px;
     background: #444;
     padding: 10px 15px;
+    padding-top: 20px;
     color: #fff;
     font-size: 26px;
     margin: 0 auto;
 }
-
+section.faq .faq-box ul.list li a {
+    padding: 20px 57px 20px 31px;
+    margin: 0px 0px 1px;
+    
+}
 section.faq .faq-box ul.list li i {
     float: right;
 }
@@ -177,21 +184,93 @@ section.faq form button {
 section.footer-border {
     background: #000;
     height: 532px;
-    color: #fff;
-    border-top: 1px solid #000;
+    color: #555;
+    border-top: 8px solid #333;
+
+    content: '';
+    display: block;
+    clear: both;
 }
 
-/* section.faq {
-    background: #000;
-    height: 532px;
-    color: #fff;
-    border-top: 3px solid #fff;
-    padding: 50px 0;    
-    
-    content: '' ;
-    display: block; 
-    clear: both;  
+section.footer-border .footer-border-box {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+section.footer-border .footer-border-box .callnumber {
+    /* margin: 0 auto; */
+    /* position: relative; */
+
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+section.footer-border .footer-border-box .callnumber a:hover{
+    text-decoration: underline;
+}
+
+section.footer-border .footer-border-box .li-footer-links {
+    /* background: red; */
+    width: 900px;
+    height: 130px;
+}
+
+section.footer-border .footer-border-box .li-footer-links .footer-link-item {
+    /* background: orange; */
+    color: 555;
+    width: 200px;
+    height: 18px;
+    padding: 5px 0;
+    font-size: 13px;
+    float: left;
+}
+
+section.footer-border .footer-border-box .lang-switch {
+    color: 555;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+}
+
+section.footer-border .footer-border-box .lang-switch i {
+    /* background: red; */
+    padding-right: 10px;
+}
+section.footer-border .footer-border-box .footer-country {
+    /* background: yellow; */
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+section.footer-border .footer-border-box .footer-text {
+    /* background: skyblue; */
+    /* padding: 10px 0; */
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+section.footer-border .footer-border-box .footer-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* section.footer-border .footer-border-box table {
+    padding: 150px;
+    font-size: 13px;
+    td{pd: 30px;}
 } */
+
+
 
 
 /* end-section footer style */
