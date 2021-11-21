@@ -1,6 +1,9 @@
 /* 구글 웹 폰트 로딩 */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
+body { 
+font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
 /* reset */
 li {
     list-style-type: none;
@@ -38,7 +41,7 @@ section.kids .kids-box {
     width: 90%; 
     height: 350px;
     margin: 0 auto;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding: 5% 10%;
 
     position: relative;
@@ -54,30 +57,25 @@ section.kids .kids-box .img-box {
     /* border: 1px solid red; */
 }
 section.kids .kids-box .title {
-    width: 40%;
     float: right;
-    /* padding: 10px 10px; */
-    /* text-align: justify; */
-    position: absolute;
-    left: 40%;
-    top: 25%;
-    /* background: tomato; */
+    width: 45%;
+    padding-right: 10%;
 }
 section.kids .kids-box .title h2 {
     font-size: 50px;
     font-weight: 700;
-    /* text-align: justify; */
     letter-spacing: 3;
     line-height: 1.2em; 
     padding-bottom: 30px;
+    /* text-align: justify; */
     /* background: red; */
 }
 section.kids .kids-box .title p {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 1.2em;
     letter-spacing: 3;
-    /* text-align: start;  */
     color: #fff;
+    /* text-align: start;  */
     /* background: blue; */
 }
 /* end-section kids style */
@@ -88,52 +86,47 @@ section.kids .kids-box .title p {
 
 section.faq {
     background: #000;
-    height: 969px;
+    /* height: 969px; */
     color: #fff;
     border-top: 8px solid #333;
-    padding: 10px 0;
+    padding: 80px 0;
 }
 section.faq .faq-box {
     /* background: red; */
-    width: 50%;
-    height: 821px;
+    width: 70%;
+    height: auto;
     margin: 0 auto;
     margin-top: 30px;
+    padding: 20px;
     position: relative;
-    }
+}
 section.faq .faq-box .title {
     /* width: 80%; */
     /* background: tomato; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    padding-bottom: 20px;
 }
 section.faq .faq-box .title h2 {
     font-size: 45px;    
     font-weight: 700;
     text-align: center;
-    padding-bottom: 20px;
-    background: yellow;
 }
 section.faq .faq-box ul.list {
     /* width: 90%; */
-    height: 500px;
-    background: red;
+    /* height: 500px; */
     /* padding: 10px; */
-    padding-bottom: 10px;
-    box-sizing: border-box;
+    padding: 10px;
+    /* box-sizing: border-box; */
     font-size: 20px;
     color: #555;
+    background: #000;
     margin: 0 auto;
 }
 section.faq .faq-box ul.list li {
-    width: 814px;
-    height: 50px;
-    margin-bottom: 5px;
     background: #444;
-    padding: 10px 15px;
-    padding-top: 20px;
     color: #fff;
-    font-size: 26px;
-    margin: 0 auto;
+    padding: 20px;
+    margin: 10px;
 }
 section.faq .faq-box ul.list li a {
     padding: 20px 57px 20px 31px;
@@ -149,6 +142,7 @@ section.faq form {
     margin: 0 auto;
 }
 section.faq p {
+    font-size: 23px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 13px;
